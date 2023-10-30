@@ -5,20 +5,20 @@
 class TufClient < Formula
   desc "TUF client CLI written in Go based on the rdimitrov/go-tuf-metadata library."
   homepage "https://github.com/rdimitrov/tuf-client-cli"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.5/tuf-client_0.0.5_darwin_amd64.tar.gz"
-      sha256 "b011132d7fe3f6e53a1d370e8dce2757a8b5136b8441ecfb937d881132d187e7"
+      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.6/tuf-client_0.0.6_darwin_amd64.tar.gz"
+      sha256 "b382f1319805e2488520f5d6a325caec510103825bec42d1c4b6aecf686f9db3"
 
       def install
         bin.install "tuf-client"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.5/tuf-client_0.0.5_darwin_arm64.tar.gz"
-      sha256 "b93d3dbc704ca348700061c9238e9fc228b54d7553686fafee66f7595ac3dd5c"
+      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.6/tuf-client_0.0.6_darwin_arm64.tar.gz"
+      sha256 "9c0fc3b5ac8586ad3823743b207e0880965e04a0e98286b25316cba61b410e8f"
 
       def install
         bin.install "tuf-client"
@@ -28,16 +28,16 @@ class TufClient < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.5/tuf-client_0.0.5_linux_arm64.tar.gz"
-      sha256 "5775712d348a8c89ca46c8334255bea66bb24b7f65f8261934364a0a42557e54"
+      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.6/tuf-client_0.0.6_linux_arm64.tar.gz"
+      sha256 "46a04cde0d49fdab08a49055fea1d198555656a23bf3d979a57711441ffa5477"
 
       def install
         bin.install "tuf-client"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.5/tuf-client_0.0.5_linux_amd64.tar.gz"
-      sha256 "3163314af90eecaae290555148b07582f7c78bbda71fd45e0f192b6a1980ab2e"
+      url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.6/tuf-client_0.0.6_linux_amd64.tar.gz"
+      sha256 "8adcb7a9f5211c5d378f7f1984045c4b9bf0f25674c112f7713fa6466e32f31a"
 
       def install
         bin.install "tuf-client"
