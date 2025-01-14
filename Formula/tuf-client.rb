@@ -10,7 +10,7 @@ class TufClient < Formula
   on_macos do
     on_intel do
       url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.7/tuf-client_0.0.7_darwin_amd64.tar.gz"
-      sha256 "82a27e0076901990bce8cd65f0e6d0fb536feacfabf7037fdf0b3bff35756626"
+      sha256 "dcddcaeea7fc4d24a9522658909640a2a05cc3e76fb852ddf0d9f7a0de6908d3"
 
       def install
         bin.install "tuf-client"
@@ -18,7 +18,7 @@ class TufClient < Formula
     end
     on_arm do
       url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.7/tuf-client_0.0.7_darwin_arm64.tar.gz"
-      sha256 "ae8e160d445754607484d2813762e80ec711be25e53cc4d15e55265263f37700"
+      sha256 "b097c9e7fe66556cb501d54993893614b2bc012116a1bd888a8bb5577c825085"
 
       def install
         bin.install "tuf-client"
@@ -30,7 +30,7 @@ class TufClient < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.7/tuf-client_0.0.7_linux_amd64.tar.gz"
-        sha256 "b89e490966526befed818b72f4135aeab52a40df524ada12fde68c5e5084fd01"
+        sha256 "c771902902d0b263f587547e6d4bb791bf7a39a84ce92c771606f558dad6f222"
 
         def install
           bin.install "tuf-client"
@@ -40,7 +40,7 @@ class TufClient < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rdimitrov/tuf-client-cli/releases/download/v0.0.7/tuf-client_0.0.7_linux_arm64.tar.gz"
-        sha256 "929de209cea22e0e0e470628d36fa9460ffc0ef858d587dac6c99e3e08000972"
+        sha256 "33c568210f92ecb9feda052e7dc86736874df8ea3c921c35f8054de8ed3c9a1a"
 
         def install
           bin.install "tuf-client"
